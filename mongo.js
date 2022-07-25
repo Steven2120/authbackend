@@ -9,7 +9,7 @@ async function mongoConnect() {
   try {
     await client.connect();
     db = await client.db(process.env.MONGO_DATABASE);
-    console.log("db connected");
+    console.log("**DB CONNECTED**");
   } catch (error) {
     console.error(error);
   }
